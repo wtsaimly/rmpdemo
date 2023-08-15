@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mlytics P2SP test</title>
+    <script src="https://cdn.radiantmediatechs.com/rmp/9.6.6/js/rmp.min.js"></script>
+    <script src="https://src.litix.io/core/4/mux.js"></script>
+    <script src="https://sdkjs.fusioncdn.com/mlysdk.js"></script>
+    <script src="./driver.min.js"></script>
+    <script src="./rmp-hls.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(53, 79, 82);
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(102, 186, 183);
+        }
+
+        .video {
+            width: 100%;
+            max-width: 800px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<h1>Radiant Media Player</h1>
+<div class="video">
+    <div id="video"></div>
+</div>
+<script>
+    const driver = mlysdk.driver.initialize()
+    const adapter = driver.extensions.RadiantMPHlsPlayerPlugin.create({
+        url: 'https://.m3u8',
+        elementId: 'video',
+        radiantMPSettings: {
+            licenseKey: '',
+            width: 800,
+            height: 600
+        }
+    });
+</script>
+</body>
+</html>

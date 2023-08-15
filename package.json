@@ -1,0 +1,22 @@
+{
+  "name": "rmpdemo",
+  "version": "0.0.1",
+  "description": "streaming demo with rmp solution.",
+  "main": "node index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wtsaimly/rmpdemo.git"
+  },
+  "keywords": [
+    "Mlytics",
+    "stream",
+    "hls",
+    "rmp"
+  ],
+  "author": "Mlytics Wesley Tsai",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  }
+}
